@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Launcher", // Keep only the relevant configuration
+            "request": "launch",
+            "mainClass": "dev.jpakjr.rpg1.Launcher",
+            // "projectName": "rpg", // Removed projectName as it might cause issues
+            "cwd": "${workspaceFolder}", // Explicitly set the Current Working Directory
+            // Define classpath using the classPaths attribute
+            "classPaths": [
+                "${workspaceFolder}/RPG1/bin",
+                "${workspaceFolder}/res"
+            ]
+            // "vmArgs": [ ... ] // Remove vmArgs for classpath
+        }
+    ]
+}

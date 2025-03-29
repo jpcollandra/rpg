@@ -18,15 +18,15 @@ public class Assets {
 	    							facts, facts2;     
 	    public static BufferedImage[] player_down, player_up, player_left, player_right,player_down1;
 	    public static BufferedImage inventoryScreen;
-	    
+		
 		public static void init(){
-			font20 = FontLoader.loadFont("res/fonts/slkscr.ttf", 20);
+			font20 = FontLoader.loadFont("/fonts/slkscr.ttf", 20); // Path relative to classpath root (res)
 			
 			
-			SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/tileset.png"));
-      		SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/textures/mainguy.png"));
+			SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("textures/tileset.png")); // Path relative to classpath root (res)
+      		SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("textures/mainguy.png")); // Path relative to classpath root (res)
       		
-      		inventoryScreen = ImageLoader.loadImage("/textures/screen.png");
+      		inventoryScreen = ImageLoader.loadImage("textures/screen.png"); // Path relative to classpath root (res)
 
       		player_down = new BufferedImage[4];
       		player_up = new BufferedImage[4];
